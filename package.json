@@ -6,6 +6,7 @@
     "docs:dev": "pnpm --filter ui build && pnpm --filter docs dev",
     "docs:build": "pnpm --filter docs build",
     "docs:serve": "pnpm --filter docs serve",
+    "ui:dev": "pnpm --filter ui dev",
     "ui:build": "pnpm --filter ui build"
   },
   "keywords": [],

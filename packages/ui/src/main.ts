@@ -1,11 +1,11 @@
-import type { Plugin } from 'vue'
+// entrypoint for the vite playground
 
-export * from './components'
+import { createApp } from "vue";
+import { uiPlugin } from './'
+import App from "./App.vue";
 
-import { CounterBtn } from './components'
+const app = createApp(App)
 
-export const uiPlugin: Plugin = {
-  install: (app) => {
-    app.component('CounterBtn', CounterBtn)
-  }
-}
+app.use(uiPlugin)
+
+app.mount("#app");
