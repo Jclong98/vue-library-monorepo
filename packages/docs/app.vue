@@ -1,11 +1,8 @@
-<script setup lang="ts">
-import { myFunction } from 'ui'
-
-onMounted(myFunction)
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
-    <NuxtWelcome />
+    <CounterBtn />
+    <CounterBtn />
   </div>
 </template>
