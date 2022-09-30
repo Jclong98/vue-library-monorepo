@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { useDouble } from "@/composables/useDouble";
 
 const count = ref(0);
+const double = useDouble(count);
 </script>
 
 <template>
@@ -17,5 +19,5 @@ const count = ref(0);
 
   <JBtn @click="count++" type="secondary">Secondary Button</JBtn>
 
-  <pre>{{ { count } }}</pre>
+  <pre>{{ { count, double } }}</pre>
 </template>
