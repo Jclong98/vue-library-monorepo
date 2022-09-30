@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import type { PropType } from "vue";
+import { computed } from "vue"
+import type { PropType } from "vue"
 
 const props = defineProps({
   type: {
     type: String as PropType<"primary" | "secondary">,
     default: "primary",
   },
-});
+})
 
-const classes = computed(() => ["j-btn", `j-btn--${props.type}`]);
+const classes = computed(() => ["j-btn", `j-btn--${props.type}`])
 </script>
 
 <template>

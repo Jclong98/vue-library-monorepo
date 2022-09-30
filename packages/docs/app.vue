@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useDouble } from "ui";
+import { useDouble } from "ui"
 
-const count = ref(0);
-const double = useDouble(count);
+const count = ref(0)
+const double = useDouble(count)
 </script>
 
 <template>

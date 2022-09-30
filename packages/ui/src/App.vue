@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { useDouble } from "@/composables/useDouble";
+import { ref } from "vue"
+import { useDouble } from "@/composables/useDouble"
 
-const count = ref(0);
-const double = useDouble(count);
+const count = ref(0)
+const double = useDouble(count)
 </script>
 
 <template>
