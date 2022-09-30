@@ -2,12 +2,14 @@
 
 import type { Plugin } from 'vue'
 
-export * from './components'
+import * as components from './components'
 
-import { JBtn } from './components'
+export * from './components'
 
 export const uiPlugin: Plugin = {
     install: (app) => {
-        app.component('JBtn', JBtn)
+        for (const [name, component] of Object.entries(components)) {
+            app.component(name, component)
+        }
     }
 }
