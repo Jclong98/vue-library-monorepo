@@ -4,10 +4,10 @@ import type { Plugin } from 'vue'
 
 export * from './components'
 
-import { CounterBtn } from './components'
+import { JBtn } from './components'
 
 export const uiPlugin: Plugin = {
     install: (app) => {
-        app.component('CounterBtn', CounterBtn)
+        app.component('JBtn', JBtn)
     }
 }

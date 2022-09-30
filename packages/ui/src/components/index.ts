@@ -1,1 +1,1 @@
-export { default as CounterBtn } from './CounterBtn.vue'
+export { default as JBtn } from './JBtn.vue'

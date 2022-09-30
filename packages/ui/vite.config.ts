@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
     Components({
-      dts: './src/component-types.d.ts',
+      dts: './src/global-components.d.ts',
     }),
   ],
   build: {
