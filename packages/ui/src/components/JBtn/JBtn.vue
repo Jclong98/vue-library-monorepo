@@ -19,25 +19,25 @@ const classes = computed(() => ["j-btn", `j-btn--${props.type}`])
 </template>
 
 <style scoped lang="scss">
-$primary: hsl(185, 100%, 37%);
-
 .j-btn {
   color: white;
-  background: $primary;
-  border: 1px solid hsl(185, 60%, 37%);
+  background: hsl(152, 70%, 37%);
+  border: 1px solid hsl(152, 70%, 37%);
   font-weight: bold;
   border-radius: 0.5em;
   padding: 10px 20px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px hsla(152, 70%, 20%, 0.3);
+  white-space: nowrap;
 
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 
   &--secondary {
     color: #444;
-    background: #eee;
-    border: 1px solid #ccc;
+    background: #f3f3f3;
+    border-color: #ccc;
+    box-shadow: 0px 4px 8px hsla(152, 70%, 0%, 0.1);
   }
 
   &:hover,
