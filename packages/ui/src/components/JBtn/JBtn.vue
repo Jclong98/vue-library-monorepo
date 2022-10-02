@@ -3,13 +3,13 @@ import { computed } from "vue"
 import type { PropType } from "vue"
 
 const props = defineProps({
-  type: {
+  variant: {
     type: String as PropType<"primary" | "secondary" | "text">,
     default: "primary",
   },
 })
 
-const classes = computed(() => ["j-btn", `j-btn--${props.type}`])
+const classes = computed(() => ["j-btn", `j-btn--${props.variant}`])
 </script>
 
 <template>
