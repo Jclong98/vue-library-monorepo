@@ -9,7 +9,9 @@
     "docs:serve": "pnpm --filter docs serve",
     "ui:dev": "pnpm --filter ui dev",
     "ui:build": "pnpm --filter ui build",
-    "ui:test": "pnpm --filter ui test"
+    "ui:test": "pnpm --filter ui test",
+    "ui:new-component": "pnpm -C packages/ui new-component",
+    "ui:new-composable": "pnpm -C packages/ui new-composable"
   },
   "keywords": [],
   "author": "",
