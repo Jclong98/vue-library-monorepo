@@ -48,10 +48,6 @@ const classes = computed(() => ["j-btn", `j-btn--${props.type}`])
 
     &:hover {
       color: hsl(152, 70%, 27%);
-    }
-
-    &:active {
-      color: hsl(152, 70%, 17%);
       background-color: hsla(152, 70%, 37%, 0.1);
     }
   }
