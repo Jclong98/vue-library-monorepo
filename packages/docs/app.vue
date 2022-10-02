@@ -16,5 +16,9 @@ const double = useDouble(count)
 
   <JBtn @click="count++" type="secondary">Secondary Button</JBtn>
 
+  <h2>Text Button</h2>
+
+  <JBtn @click="count++" type="text">Text Button</JBtn>
+
   <pre>{{ { count, double } }}</pre>
 </template>
