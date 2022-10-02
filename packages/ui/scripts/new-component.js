@@ -52,6 +52,10 @@ const componentTemplate = `<script setup lang="ts">
 <template>
   <div></div>
 </template>
+
+<style scoped>
+
+</style>
 `
 
 // create the component's test
@@ -60,11 +64,11 @@ const testTemplate = `import { render } from '@testing-library/vue'
 import ${componentName} from './'
 
 describe('${componentName}.vue', () => {
-    it('renders component', () => { 
-        const { container } = render(${componentName})
+  it('renders component', () => { 
+    const { container } = render(${componentName})
 
-        expect(container).toMatchSnapshot()
-    })
+    expect(container).toMatchSnapshot()
+  })
 })
 `
 
