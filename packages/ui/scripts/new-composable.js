@@ -12,7 +12,11 @@ if (!composableName) {
 
 // make sure the composable starts with use
 if (!composableName.startsWith("use")) {
-  composableName = "use" + composableName
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1)
+  }
+
+  composableName = "use" + capitalizeFirstLetter(composableName)
 }
 
 // get the current working directory
