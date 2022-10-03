@@ -61,7 +61,7 @@ const componentTemplate = `<script setup lang="ts">
 // create the component's test
 const testTemplate = `import { render } from '@testing-library/vue'
 
-import ${componentName} from './'
+import { ${componentName} } from './'
 
 describe('${componentName}.vue', () => {
   it('renders component', () => { 
