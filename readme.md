@@ -9,6 +9,8 @@ A starter project for building a vue library for components and composables
 - [vite library mode](https://vitejs.dev/guide/build.html#library-mode)
 - [nuxt 3](https://v3.nuxtjs.org)
 - [typscript](https://www.typescriptlang.org/)
+- [vitest](https://vitest.dev)
+- [testing library](https://testing-library.com/docs/vue-testing-library/intro/)
 
 ## Commands
 
@@ -18,5 +20,6 @@ A starter project for building a vue library for components and composables
 | `pnpm docs:dev`                           | Builds the `ui` package and runs a [nuxt](https://v3.nuxtjs.org/) dev server in the `docs` package using the build library |
 | `pnpm ui:dev`                             | Runs a [vite](https://vitejs.dev) playground in the `ui` package for fast development                                      |
 | `pnpm ui:build`                           | builds a vue component library with [vite library mode](https://vitejs.dev/guide/build.html#library-mode)                  |
+| `pnpm ui:test`                            | runs tests in the `ui` package                                                                                             |
 | `pnpm ui:new-component <ComponentName>`   | Scaffolds a new component                                                                                                  |
 | `pnpm ui:new-composable <composableName>` | Scaffolds a new composable                                                                                                 |
