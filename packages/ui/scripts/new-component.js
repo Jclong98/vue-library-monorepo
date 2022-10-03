@@ -33,7 +33,7 @@ fs.mkdirSync(componentFolderPath)
 const componentPath = path.join(componentFolderPath, `${componentName}.vue`)
 
 // get the path to the new component's test
-const testPath = path.join(componentFolderPath, `${componentName}.test.ts`)
+const testPath = path.join(componentFolderPath, `${componentName}.spec.ts`)
 
 const indexPath = path.join(componentFolderPath, "index.ts")
 
