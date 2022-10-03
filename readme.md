@@ -6,6 +6,9 @@ There is a [**ui**](./packages/ui/) package that is used by the [**docs**](./pac
 
 ## Getting started
 
-`ui:dev` will start a vite server that can be used as a playground for development
-
-The `docs:dev` command will build the ui package and then run a nuxt server with the latest build.
+| command                                   | description                                                              |
+| ----------------------------------------- | ------------------------------------------------------------------------ |
+| `pnpm dev`                                | Builds the ui package and runs a nuxt dev server using the build library |
+| `pnpm ui:dev`                             | Runs a vite playground in the ui package for fast development            |
+| `pnpm ui:new-component <ComponentName>`   | Scaffolds a new component                                                |
+| `pnpm ui:new-composable <composableName>` | Scaffolds a new composable                                               |
