@@ -1,11 +1,25 @@
 # Vue Library Monorepo
 
-This is a monorepo using pnpm workspaces
+A starter project for building a vue library for components and composables
 
-There is a [**ui**](./packages/ui/) package that is used by the [**docs**](./packages/docs/) package.
+## Features
 
-## Getting started
+- [vue 3](https://vuejs.org)
+- [pnpm](https://pnpm.io)
+- [vite library mode](https://vitejs.dev/guide/build.html#library-mode)
+- [nuxt 3](https://v3.nuxtjs.org)
+- [typscript](https://www.typescriptlang.org/)
+- [vitest](https://vitest.dev)
+- [testing library](https://testing-library.com/docs/vue-testing-library/intro/)
 
-`ui:dev` will start a vite server that can be used as a playground for development
+## Commands
 
-The `docs:dev` command will build the ui package and then run a nuxt server with the latest build.
+| command                                   | description                                                                                                                |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `pnpm dev`                                | alias for `pnpm docs:dev`                                                                                                  |
+| `pnpm docs:dev`                           | Builds the `ui` package and runs a [nuxt](https://v3.nuxtjs.org/) dev server in the `docs` package using the build library |
+| `pnpm ui:dev`                             | Runs a [vite](https://vitejs.dev) playground in the `ui` package for fast development                                      |
+| `pnpm ui:build`                           | builds a vue component library with [vite library mode](https://vitejs.dev/guide/build.html#library-mode)                  |
+| `pnpm ui:test`                            | runs tests in the `ui` package                                                                                             |
+| `pnpm ui:new-component <ComponentName>`   | Scaffolds a new component                                                                                                  |
+| `pnpm ui:new-composable <composableName>` | Scaffolds a new composable                                                                                                 |
