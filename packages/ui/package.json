@@ -20,9 +20,7 @@
     "dev": "vite",
     "build": "vite build && vue-tsc --declaration --declarationDir ./dist/types --emitDeclarationOnly",
     "preview": "vite preview",
-    "test": "vitest",
-    "new-component": "node scripts/new-component.js",
-    "new-composable": "node scripts/new-composable.js"
+    "test": "vitest"
   },
   "dependencies": {
     "sass": "^1.55.0",

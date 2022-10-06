@@ -2,6 +2,7 @@
   "name": "vue-library-monorepo",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "dev": "pnpm docs:dev",
     "docs:dev": "pnpm --filter ui build && pnpm --filter docs dev",
@@ -10,8 +11,8 @@
     "ui:dev": "pnpm --filter ui dev",
     "ui:build": "pnpm --filter ui build",
     "ui:test": "pnpm --filter ui test",
-    "ui:new-component": "pnpm -C packages/ui new-component",
-    "ui:new-composable": "pnpm -C packages/ui new-composable"
+    "new-component": "node ./scripts/new-component",
+    "new-composable": "node ./scripts/new-composable"
   },
   "keywords": [],
   "author": "",

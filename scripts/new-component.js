@@ -21,7 +21,7 @@ componentName = capitalizeFirstLetter(componentName)
 const cwd = process.cwd()
 
 // get the path to the components folder
-const componentsPath = path.join(cwd, "src", "components")
+const componentsPath = path.join(cwd, "packages", "ui", "src", "components")
 
 // get the path to the new component folder
 const componentFolderPath = path.join(componentsPath, componentName)

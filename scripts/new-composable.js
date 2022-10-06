@@ -23,7 +23,7 @@ if (!composableName.startsWith("use")) {
 const cwd = process.cwd()
 
 // get the path to the composables folder
-const composablesPath = path.join(cwd, "src", "composables")
+const composablesPath = path.join(cwd, "packages", "ui", "src", "composables")
 
 // get the path to the new composable folder
 const composableFolderPath = path.join(composablesPath, composableName)
