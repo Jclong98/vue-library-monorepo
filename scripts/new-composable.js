@@ -60,3 +60,29 @@ describe("${composableName}", () => {
 
 // create the new composable test
 fs.writeFileSync(composableTestPath, composableTestTemplate)
+
+// get path to component page in docs
+const docsPageDir = path.join(
+  cwd,
+  "packages",
+  "docs",
+  "pages",
+  "composables",
+  composableName
+)
+fs.mkdirSync(docsPageDir)
+
+const docsIndexPath = path.join(docsPageDir, "index.vue")
+const docsPageTemplate = `<script setup lang="ts">
+
+</script>
+
+<template>
+  <div></div>
+</template>
+
+<style scoped>
+
+</style>
+`
+fs.writeFileSync(docsIndexPath, docsPageTemplate)

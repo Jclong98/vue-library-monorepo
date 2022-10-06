@@ -37,6 +37,19 @@ const testPath = path.join(componentFolderPath, `${componentName}.spec.ts`)
 
 const indexPath = path.join(componentFolderPath, "index.ts")
 
+// get path to component page in docs
+const docsPath = path.join(
+  cwd,
+  "packages",
+  "docs",
+  "pages",
+  "components",
+  componentName
+)
+fs.mkdirSync(docsPath)
+
+const docsIndexPath = path.join(docsPath, "index.vue")
+
 console.log({
   cwd,
   componentFolderPath,
@@ -87,6 +100,10 @@ const files = [
   {
     path: indexPath,
     content: indexContent,
+  },
+  {
+    path: docsIndexPath,
+    content: componentTemplate,
   },
 ]
 
