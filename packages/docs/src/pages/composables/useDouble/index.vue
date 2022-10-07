@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from "vue"
 import { useDouble } from "ui"
 
 const count = ref(0)

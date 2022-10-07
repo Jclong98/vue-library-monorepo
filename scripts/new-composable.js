@@ -66,6 +66,7 @@ const docsPageDir = path.join(
   cwd,
   "packages",
   "docs",
+  "src",
   "pages",
   "composables",
   composableName
