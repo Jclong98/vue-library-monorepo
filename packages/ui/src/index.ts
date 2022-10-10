@@ -1,16 +1,15 @@
 // entrypoint of the library
 
-import type { Plugin } from "vue"
+import type { Plugin } from 'vue'
 
-import * as components from "./components"
+import * as components from './components'
 
-export * from "./components"
-export * from "./composables"
+export * from './components'
+export * from './composables'
 
 export const uiPlugin: Plugin = {
   install: (app) => {
-    for (const [name, component] of Object.entries(components)) {
+    for (const [name, component] of Object.entries(components))
       app.component(name, component)
-    }
   },
 }

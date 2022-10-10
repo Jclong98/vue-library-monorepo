@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { useDouble } from "@/composables/useDouble"
+import { ref } from 'vue'
+import { useDouble } from '@/composables/useDouble'
 
 const count = ref(0)
 const double = useDouble(count)
@@ -13,15 +13,21 @@ const double = useDouble(count)
 
   <h2>Primary Button</h2>
 
-  <JBtn @click="count++">Primary Button</JBtn>
+  <JBtn @click="count++">
+    Primary Button
+  </JBtn>
 
   <h2>Secondary Button</h2>
 
-  <JBtn @click="count++" variant="secondary">Secondary Button</JBtn>
+  <JBtn variant="secondary" @click="count++">
+    Secondary Button
+  </JBtn>
 
   <h2>Text Button</h2>
 
-  <JBtn @click="count++" variant="text">Text Button</JBtn>
+  <JBtn variant="text" @click="count++">
+    Text Button
+  </JBtn>
 
   <pre>{{ { count, double } }}</pre>
 </template>

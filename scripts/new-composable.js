@@ -1,29 +1,29 @@
-import fs from "fs"
-import path from "path"
+import fs from 'fs'
+import path from 'path'
 
 // get command line arguments to create a new composable
 const args = process.argv.slice(2)
 let composableName = args[0]
 
 if (!composableName) {
-  console.error("Please provide a composable name")
+  console.error('Please provide a composable name')
   process.exit(1)
 }
 
 // make sure the composable starts with use
-if (!composableName.startsWith("use")) {
+if (!composableName.startsWith('use')) {
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
 
-  composableName = "use" + capitalizeFirstLetter(composableName)
+  composableName = `use${capitalizeFirstLetter(composableName)}`
 }
 
 // get the current working directory
 const cwd = process.cwd()
 
 // get the path to the composables folder
-const composablesPath = path.join(cwd, "packages", "ui", "src", "composables")
+const composablesPath = path.join(cwd, 'packages', 'ui', 'src', 'composables')
 
 // get the path to the new composable folder
 const composableFolderPath = path.join(composablesPath, composableName)
@@ -32,7 +32,7 @@ const composableFolderPath = path.join(composablesPath, composableName)
 fs.mkdirSync(composableFolderPath)
 
 // get the path to the new composable
-const composablePath = path.join(composableFolderPath, `index.ts`)
+const composablePath = path.join(composableFolderPath, 'index.ts')
 const composableTemplate = `import { computed, unref } from "vue"
 import type { Ref } from "vue"
 
@@ -45,7 +45,7 @@ export function ${composableName}(value: Ref<number> | number) {
 fs.writeFileSync(composablePath, composableTemplate)
 
 // get the path to the new composable test
-const composableTestPath = path.join(composableFolderPath, `index.spec.ts`)
+const composableTestPath = path.join(composableFolderPath, 'index.spec.ts')
 const composableTestTemplate = `import { ref } from "vue"
 import { ${composableName} } from "./"
 
@@ -64,16 +64,16 @@ fs.writeFileSync(composableTestPath, composableTestTemplate)
 // get path to component page in docs
 const docsPageDir = path.join(
   cwd,
-  "packages",
-  "docs",
-  "src",
-  "pages",
-  "composables",
-  composableName
+  'packages',
+  'docs',
+  'src',
+  'pages',
+  'composables',
+  composableName,
 )
 fs.mkdirSync(docsPageDir)
 
-const docsIndexPath = path.join(docsPageDir, "index.vue")
+const docsIndexPath = path.join(docsPageDir, 'index.vue')
 const docsPageTemplate = `<script setup lang="ts">
 
 </script>

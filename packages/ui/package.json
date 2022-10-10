@@ -1,21 +1,21 @@
 {
   "name": "ui",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/ui.umd.cjs",
-  "module": "./dist/ui.js",
+  "version": "0.0.0",
+  "private": true,
   "exports": {
     ".": {
-      "import": "./dist/ui.js",
-      "require": "./dist/ui.umd.cjs"
+      "require": "./dist/ui.umd.cjs",
+      "import": "./dist/ui.js"
     },
     "./style.css": "./dist/style.css"
   },
+  "main": "./dist/ui.umd.cjs",
+  "module": "./dist/ui.js",
   "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc --declaration --declarationDir ./dist/types --emitDeclarationOnly",

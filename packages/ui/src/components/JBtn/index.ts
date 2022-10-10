@@ -1,1 +1,1 @@
-export { default as JBtn } from './JBtn.vue';
+export { default as JBtn } from './JBtn.vue'

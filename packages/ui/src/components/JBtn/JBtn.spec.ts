@@ -7,7 +7,7 @@ describe('JBtn', async () => {
     const { getByText } = render(JBtn, {
       slots: {
         default: 'test',
-      }
+      },
     })
 
     expect(getByText('test')).toBeTruthy()

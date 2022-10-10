@@ -1,12 +1,12 @@
-import fs from "fs"
-import path from "path"
+import fs from 'fs'
+import path from 'path'
 
 // get command line arguments to create a new component
 const args = process.argv.slice(2)
 let componentName = args[0]
 
 if (!componentName) {
-  console.error("Please provide a component name")
+  console.error('Please provide a component name')
   process.exit(1)
 }
 
@@ -21,7 +21,7 @@ componentName = capitalizeFirstLetter(componentName)
 const cwd = process.cwd()
 
 // get the path to the components folder
-const componentsPath = path.join(cwd, "packages", "ui", "src", "components")
+const componentsPath = path.join(cwd, 'packages', 'ui', 'src', 'components')
 
 // get the path to the new component folder
 const componentFolderPath = path.join(componentsPath, componentName)
@@ -35,21 +35,21 @@ const componentPath = path.join(componentFolderPath, `${componentName}.vue`)
 // get the path to the new component's test
 const testPath = path.join(componentFolderPath, `${componentName}.spec.ts`)
 
-const indexPath = path.join(componentFolderPath, "index.ts")
+const indexPath = path.join(componentFolderPath, 'index.ts')
 
 // get path to component page in docs
 const docsPath = path.join(
   cwd,
-  "packages",
-  "docs",
-  "src",
-  "pages",
-  "components",
-  componentName
+  'packages',
+  'docs',
+  'src',
+  'pages',
+  'components',
+  componentName,
 )
 fs.mkdirSync(docsPath)
 
-const docsIndexPath = path.join(docsPath, "index.vue")
+const docsIndexPath = path.join(docsPath, 'index.vue')
 
 console.log({
   cwd,
@@ -109,9 +109,10 @@ const files = [
 ]
 
 for (const file of files) {
-  fs.writeFile(file.path, file.content, function (err) {
-    if (err) throw err
+  fs.writeFile(file.path, file.content, (err) => {
+    if (err)
+      throw err
   })
 }
 
-console.log("Component created successfully")
+console.log('Component created successfully')

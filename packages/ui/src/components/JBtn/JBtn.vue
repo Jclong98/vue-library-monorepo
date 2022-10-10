@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import { computed } from "vue"
-import type { PropType } from "vue"
+import { computed } from 'vue'
+import type { PropType } from 'vue'
 
 const props = defineProps({
   variant: {
-    type: String as PropType<"primary" | "secondary" | "text">,
-    default: "primary",
+    type: String as PropType<'primary' | 'secondary' | 'text'>,
+    default: 'primary',
   },
 })
 
-const classes = computed(() => ["j-btn", `j-btn--${props.variant}`])
+const classes = computed(() => ['j-btn', `j-btn--${props.variant}`])
 </script>
 
 <template>
   <button :class="classes">
-    <slot></slot>
+    <slot />
   </button>
 </template>
 

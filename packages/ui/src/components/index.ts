@@ -1,8 +1,8 @@
-import "@vue/runtime-core"
+import '@vue/runtime-core'
 
-import { JBtn } from "./JBtn"
+import { JBtn } from './JBtn'
 
-declare module "@vue/runtime-core" {
+declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     JBtn: typeof JBtn
   }

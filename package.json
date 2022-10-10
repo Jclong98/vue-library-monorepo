@@ -1,8 +1,11 @@
 {
   "name": "vue-library-monorepo",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "scripts": {
     "dev": "pnpm docs:dev",
     "docs:dev": "pnpm --filter ui build && pnpm --filter docs dev",
@@ -12,9 +15,12 @@
     "ui:build": "pnpm --filter ui build",
     "ui:test": "pnpm --filter ui test",
     "new-component": "node ./scripts/new-component",
-    "new-composable": "node ./scripts/new-composable"
+    "new-composable": "node ./scripts/new-composable",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "eslint": "^8.25.0"
+  }
 }
