@@ -1,6 +1,5 @@
 /// <reference types="vitest" />
 
-import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -8,13 +7,13 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
+      '@': new URL('./src', import.meta.url).pathname,
     },
   },
   plugins: [vue()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: './src/index.ts',
       name: 'ui',
       // the proper extensions will be added
       fileName: 'ui',
