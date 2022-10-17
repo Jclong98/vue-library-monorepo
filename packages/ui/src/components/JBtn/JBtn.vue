@@ -19,10 +19,13 @@ const classes = computed(() => ['j-btn', `j-btn--${props.variant}`])
 </template>
 
 <style scoped lang="scss">
+// $green: hsl(152, 70%, 37%);
+$green: hsl(152, 70%, 37%);
+
 .j-btn {
   color: white;
-  background: hsl(152, 70%, 37%);
-  border: 1px solid hsl(152, 70%, 37%);
+  background: $green;
+  border: 1px solid $green;
   font-weight: bold;
   border-radius: 0.5em;
   padding: 10px 20px;
@@ -41,7 +44,7 @@ const classes = computed(() => ['j-btn', `j-btn--${props.variant}`])
   }
 
   &--text {
-    color: hsl(152, 70%, 37%);
+    color: $green;
     background: transparent;
     border-color: transparent;
     box-shadow: none;

@@ -17,9 +17,8 @@ A starter project for building a vue library for components and composables
 | command                                   | description                                                                                                                |
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | `pnpm dev`                                | alias for `pnpm docs:dev`                                                                                                  |
-| `pnpm docs:dev`                           | Builds the `ui` package and runs a [nuxt](https://v3.nuxtjs.org/) dev server in the `docs` package using the build library |
-| `pnpm ui:dev`                             | Runs a [vite](https://vitejs.dev) playground in the `ui` package for fast development                                      |
+| `pnpm docs:dev`                           | Run a [vite](https://vitejs.dev) dev server in the `docs`                                                                  |
 | `pnpm ui:build`                           | builds a vue component library with [vite library mode](https://vitejs.dev/guide/build.html#library-mode)                  |
 | `pnpm ui:test`                            | runs tests in the `ui` package                                                                                             |
-| `pnpm ui:new-component <ComponentName>`   | Scaffolds a new component                                                                                                  |
-| `pnpm ui:new-composable <composableName>` | Scaffolds a new composable                                                                                                 |
+| `pnpm new-component <ComponentName>`   | Scaffolds a new component                                                                                                  |
+| `pnpm new-composable <composableName>` | Scaffolds a new composable                                                                                                 |
