@@ -1,5 +1,5 @@
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
 
 // get command line arguments to create a new composable
 const args = process.argv.slice(2)
