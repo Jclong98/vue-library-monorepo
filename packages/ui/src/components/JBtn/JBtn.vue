@@ -19,7 +19,6 @@ const classes = computed(() => ['j-btn', `j-btn--${props.variant}`])
 </template>
 
 <style scoped lang="scss">
-// $green: hsl(152, 70%, 37%);
 $green: hsl(152, 70%, 37%);
 
 .j-btn {
