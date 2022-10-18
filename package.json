@@ -9,7 +9,7 @@
   "scripts": {
     "?dev": "alias for docs:dev",
     "dev": "pnpm docs:dev",
-    
+
     "?docs:dev": "run a vite dev server for the docs using the ui package",
     "docs:dev": "pnpm --filter docs dev",
 
@@ -18,10 +18,10 @@
 
     "?docs:serve": "serve the docs site",
     "docs:serve": "pnpm --filter docs serve",
-    
+
     "?play": "run a vite playground with the built ui package to mimic real usage",
     "play": "pnpm --filter ui build && pnpm --filter playground dev",
-    
+
     "?build": "build the ui package",
     "ui:build": "pnpm --filter ui build",
 
@@ -33,7 +33,7 @@
 
     "?new-composable": "create a new composable and page for it in the docs",
     "new-composable": "node ./scripts/new-composable",
-    
+
     "?lint": "detect linting errors",
     "lint": "eslint .",
 
