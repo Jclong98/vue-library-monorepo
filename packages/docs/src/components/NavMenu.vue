@@ -46,11 +46,3 @@ const composablesRoutes = computed(() => getRootRoutes('composables'))
     </ul>
   </nav>
 </template>
-
-<style scoped>
-nav {
-  border-right: 1px solid gray;
-  padding: 1rem;
-}
-</style>
-
