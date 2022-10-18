@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
+import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,6 +23,9 @@ export default defineConfig({
     AutoImport({
       dts: './src/auto-imports.d.ts',
       imports: ['vue', VueRouterAutoImports],
+    }),
+    Components({
+      dts: './src/components.d.ts',
     }),
   ],
 })

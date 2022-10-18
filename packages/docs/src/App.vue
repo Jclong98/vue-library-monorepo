@@ -1,15 +1,28 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <h1>
-      <router-link to="/">
-        Docs
-      </router-link>
-    </h1>
+  <div class="container">
+    <NavMenu />
 
-    <router-view />
+    <main>
+      <router-view />
+    </main>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+
+  gap: 1rem;
+  border-radius: 4px;
+
+  max-width: 800px;
+  margin: auto;
+
+  border: 1px solid gray;
+
+}
+</style>
