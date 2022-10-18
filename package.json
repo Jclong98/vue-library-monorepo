@@ -7,15 +7,37 @@
   "license": "ISC",
   "keywords": [],
   "scripts": {
+    "?dev": "alias for docs:dev",
     "dev": "pnpm docs:dev",
+    
+    "?docs:dev": "run a vite dev server for the docs using the ui package",
     "docs:dev": "pnpm --filter docs dev",
+
+    "?docs:build": "build the docs site",
     "docs:build": "pnpm --filter docs build",
+
+    "?docs:serve": "serve the docs site",
     "docs:serve": "pnpm --filter docs serve",
+    
+    "?play": "run a vite playground with the built ui package to mimic real usage",
+    "play": "pnpm --filter ui build && pnpm --filter playground dev",
+    
+    "?build": "build the ui package",
     "ui:build": "pnpm --filter ui build",
+
+    "?test": "test the ui package",
     "ui:test": "pnpm --filter ui test",
+
+    "?new-component": "create a new component and page for it in the docs",
     "new-component": "node ./scripts/new-component",
+
+    "?new-composable": "create a new composable and page for it in the docs",
     "new-composable": "node ./scripts/new-composable",
+    
+    "?lint": "detect linting errors",
     "lint": "eslint .",
+
+    "?lint:fix": "fix linting errors throughout the project",
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
