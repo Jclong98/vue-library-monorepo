@@ -19,18 +19,22 @@ const classes = computed(() => ['j-btn', `j-btn--${props.variant}`])
 </template>
 
 <style scoped lang="scss">
-$green: hsl(152, 70%, 37%);
+$hue: 152;
+
+$primary-500: hsl($hue, 70%, 37%);
+$primary-700: hsl($hue, 70%, 27%);
+$primary-shadow: hsl($hue 70% 20% / 0.3);
 
 .j-btn {
   color: white;
-  background: $green;
-  border: 1px solid $green;
+  background: $primary-500;
+  border: 1px solid $primary-500;
   font-weight: bold;
   border-radius: 0.5em;
   padding: 10px 20px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  box-shadow: 0px 4px 8px hsla(152, 70%, 20%, 0.3);
+  box-shadow: 0px 4px 8px $primary-shadow;
   white-space: nowrap;
 
   transition: all 0.1s ease-in-out;
@@ -43,14 +47,14 @@ $green: hsl(152, 70%, 37%);
   }
 
   &--text {
-    color: $green;
+    color: $primary-500;
     background: transparent;
     border-color: transparent;
     box-shadow: none;
 
     &:hover {
-      color: hsl(152, 70%, 27%);
-      background-color: hsla(152, 70%, 37%, 0.1);
+      color: $primary-700;
+      background-color: rgba($primary-500, 0.1);
     }
   }
 
