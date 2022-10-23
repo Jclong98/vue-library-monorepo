@@ -9,7 +9,7 @@ function getRootRoutes(base: string) {
   const newRoutes = routes.map((route) => {
     return {
       path: route.path,
-      label: route.path.replace(`/${base}/`, ''),
+      label: route.path.split('/').pop(),
     }
   })
 
