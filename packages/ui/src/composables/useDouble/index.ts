@@ -1,6 +1,7 @@
-import { computed, unref } from 'vue'
-import type { MaybeRef } from '@vueuse/core'
+import { computed } from 'vue'
+import { resolveUnref } from '@vueuse/core'
+import type { MaybeComputedRef } from '@vueuse/core'
 
-export function useDouble(value: MaybeRef<number>) {
-  return computed(() => unref(value) * 2)
+export function useDouble(value: MaybeComputedRef<number>) {
+  return computed(() => resolveUnref(value) * 2)
 }
