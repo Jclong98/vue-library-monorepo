@@ -80,7 +80,7 @@ import { ${componentName} } from './'
 describe('${componentName}.vue', () => {
   it('renders component', () => { 
     const { container } = render(${componentName})
-g
+
     expect(container).toMatchSnapshot()
   })
 })
