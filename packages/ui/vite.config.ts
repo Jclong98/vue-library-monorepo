@@ -11,6 +11,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    // https://github.com/vitejs/vite/tree/main/packages/plugin-vue
     vue(),
   ],
   build: {

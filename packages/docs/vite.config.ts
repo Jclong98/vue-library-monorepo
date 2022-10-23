@@ -16,14 +16,21 @@ export default defineConfig({
     },
   },
   plugins: [
+    // https://github.com/posva/unplugin-vue-router
     VueRouter({
       dts: './src/typed-router.d.ts',
     }),
+
+    // https://github.com/vitejs/vite/tree/main/packages/plugin-vue
     vue(),
+
+    // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       dts: './src/auto-imports.d.ts',
       imports: ['vue', VueRouterAutoImports],
     }),
+
+    // https://github.com/antfu/unplugin-vue-components
     Components({
       dts: './src/components.d.ts',
     }),
