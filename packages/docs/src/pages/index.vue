@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div>
     <h1>Docs Home</h1>
@@ -9,3 +7,8 @@
     </p>
   </div>
 </template>
+
+<route lang="yaml">
+meta:
+  layout: home
+</route>
