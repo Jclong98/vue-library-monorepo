@@ -7,7 +7,7 @@
     </main>
 
     <footer>
-      <pre>template [default]</pre>
+      <pre>layout [default]</pre>
     </footer>
   </div>
 </template>

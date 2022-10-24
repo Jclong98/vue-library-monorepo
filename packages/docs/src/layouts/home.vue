@@ -7,7 +7,7 @@
     </main>
 
     <footer>
-      <pre>template [home]</pre>
+      <pre>layout [home]</pre>
     </footer>
   </div>
 </template>
