@@ -9,12 +9,9 @@ const doubleCount = useDouble(count)
   <div>
     <h1>useDouble</h1>
 
-    <JBtn @click="count--">
-      -
-    </JBtn>
-    <JBtn @click="count++">
-      +
-    </JBtn>
+    <label>
+      Number: <input v-model="count" type="number">
+    </label>
 
     <pre>{{ { count, doubleCount } }}</pre>
   </div>
