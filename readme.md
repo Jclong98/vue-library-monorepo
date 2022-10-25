@@ -11,6 +11,18 @@ A starter project for building a vue library for components and composables
 - [vitest](https://vitest.dev)
 - [testing library](https://testing-library.com/docs/vue-testing-library/intro/)
 
+## Getting Started
+
+Installing dependencies
+```
+pnpm i
+```
+
+Running the dev/docs development server
+```
+pnpm dev
+```
+
 ## Commands
 
 | command                                   | description                                                                                                                   |
