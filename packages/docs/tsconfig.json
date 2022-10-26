@@ -14,7 +14,6 @@
     "skipLibCheck": true,
     "paths": {
       "@/*": ["./src/*"],
-      "ui": ["../ui/src"]
     },
     "types": [
       "vite-plugin-vue-layouts/client"

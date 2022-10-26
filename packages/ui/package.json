@@ -17,6 +17,7 @@
     "dist"
   ],
   "scripts": {
+    "dev": "vite",
     "build": "vite build && vue-tsc --declaration --declarationDir ./dist/types --emitDeclarationOnly",
     "preview": "vite preview",
     "test": "vitest"

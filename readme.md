@@ -27,8 +27,8 @@ pnpm dev
 
 | command                                   | description                                                                                                                   |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `pnpm dev` <br> `pnpm docs:dev`           | runs a [vite](https://vitejs.dev) dev server in the `docs` package                                                            |
-| `pnpm play`                               | builds the ui package and runs a [vite](https://vitejs.dev) dev server in the `playground` package using the built ui package |
+| `pnpm dev` <br> `pnpm docs:dev`           | builds the ui package and runs a [vite](https://vitejs.dev) dev server in the `docs` package                                  |
+| `pnpm ui:dev`                             | runs a [vite](https://vitejs.dev) dev server in the `ui` package                                                              |
 | `pnpm ui:build`                           | builds a vue component library with [vite library mode](https://vitejs.dev/guide/build.html#library-mode)                     |
 | `pnpm ui:test`                            | runs tests in the `ui` package                                                                                                |
 | `pnpm new-component <ComponentName>`      | Scaffolds a new component                                                                                                     |
