@@ -41,7 +41,7 @@ const indexPath = path.join(componentFolderPath, 'index.ts')
 const docsPath = path.join(
   cwd,
   'packages',
-  'docs',
+  'ui',
   'src',
   'pages',
   'components',

@@ -65,7 +65,7 @@ fs.writeFileSync(composableTestPath, composableTestTemplate)
 const docsPageDir = path.join(
   cwd,
   'packages',
-  'docs',
+  'ui',
   'src',
   'pages',
   'composables',
