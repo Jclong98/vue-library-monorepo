@@ -1,3 +1,5 @@
+// add components here that you want to be deployed as a library
+
 import '@vue/runtime-core'
 
 import { JBtn } from './JBtn'

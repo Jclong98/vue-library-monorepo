@@ -13,9 +13,13 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "paths": {
-      "@/*": ["./src"]
+      "@/*": ["./src"],
+      "ui": ["./src/index.ts"]
     },
-    "types": ["vitest/globals"]
+    "types": [
+      "vite-plugin-vue-layouts/client",
+      "vitest/globals"
+    ]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
