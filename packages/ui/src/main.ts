@@ -1,3 +1,5 @@
+// entrypoint of the docs app
+
 import { createApp } from 'vue'
 import './style.css'
 
@@ -15,7 +17,6 @@ app.use(uiPlugin)
 const router = createRouter({
   history: createWebHistory(),
   extendRoutes: routes => setupLayouts(routes),
-
 })
 
 app.use(router)
