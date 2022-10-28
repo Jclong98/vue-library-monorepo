@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build:lib": "vue-tsc --noEmit && vite build --mode lib",
+    "build:lib": "vite build --mode lib && vue-tsc --declaration --declarationDir ./dist/types --emitDeclarationOnly",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest"
