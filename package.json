@@ -13,13 +13,14 @@
     "ui:build:lib": "pnpm --filter ui build:lib",
     "ui:preview": "pnpm --filter ui preview",
     "ui:test": "pnpm --filter ui test",
-    "new-component": "node ./scripts/new-component",
-    "new-composable": "node ./scripts/new-composable",
+    "new-component": "tsx ./scripts/new-component",
+    "new-composable": "tsx ./scripts/new-composable",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
-    "eslint": "^8.25.0"
+    "eslint": "^8.25.0",
+    "tsx": "^3.11.0"
   }
 }

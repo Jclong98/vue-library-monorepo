@@ -33,11 +33,12 @@ fs.mkdirSync(composableFolderPath)
 
 // get the path to the new composable
 const composablePath = path.join(composableFolderPath, 'index.ts')
-const composableTemplate = `import { computed, unref } from "vue"
-import type { Ref } from "vue"
+const composableTemplate = `import { computed } from 'vue'
+import { resolveUnref } from '@vueuse/core'
+import type { MaybeComputedRef } from '@vueuse/core'
 
-export function ${composableName}(value: Ref<number> | number) {
-  return computed(() => unref(value) * 2)
+export function useDouble(value: MaybeComputedRef<number>) {
+  return computed(() => resolveUnref(value) * 2)
 }
 `
 
@@ -46,11 +47,11 @@ fs.writeFileSync(composablePath, composableTemplate)
 
 // get the path to the new composable test
 const composableTestPath = path.join(composableFolderPath, 'index.spec.ts')
-const composableTestTemplate = `import { ref } from "vue"
-import { ${composableName} } from "./"
+const composableTestTemplate = `import { ref } from 'vue'
+import { ${composableName} } from './'
 
-describe("${composableName}", () => {
-  it("should work", () => {
+describe('${composableName}', () => {
+  it('should work', () => {
     const input = ref(1)
     const result = ${composableName}(input)
     expect(result.value).toBe(2)
@@ -86,4 +87,5 @@ const docsPageTemplate = `<script setup lang="ts">
 
 </style>
 `
+
 fs.writeFileSync(docsIndexPath, docsPageTemplate)
